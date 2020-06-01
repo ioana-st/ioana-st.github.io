@@ -13,17 +13,41 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: "Ioana @ work"
+email: "st.ioana@gmail.com"
+name: "Ioana"
+url: "https://st-ioana.github.io"
+search: true
+search_full_content: true
+
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  ioana-st
+author:
+  name     : "Ioana"
+  avatar   : "/assets/images/myAvatar.png"
+  bio      : "Technical writer"
+  location : "Bucharest, Romania"
 
+defaults:
+  # _posts
+  - scope:
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      related: true
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 # Build settings
 markdown: kramdown
 plugins:
@@ -31,6 +55,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 remote_theme: mmistakes/minimal-mistakes@4.19.2
+include:
+  - _pages
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
