@@ -1,5 +1,6 @@
 ---
 title: Technical Writing 101 Presentation
+classes: wide
 ---
 
 **Description**: Introduction to technical writing, aimed at people who had never heard of the profession.
