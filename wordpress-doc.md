@@ -1,5 +1,6 @@
 ---
 title: Wordpress Documentation
+classes: wide
 ---
 
 **Description**: Documentation for updating a Wordpress blog based on the [Ovation](https://wordpress.com/theme/ovation) theme.
