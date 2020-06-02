@@ -15,7 +15,7 @@ As a technical writer, I have:
 * Coordinated documentation delivery on a monthly release cycle, within an Agile environment.
 * Served as point of contact for other teams and raised the profile of the Documentation team in the company.
 * Given presentations to internal teams and to clients.
-* Reviewed the work of junior writers.
+* Reviewed the work of other writers.
 * Provided technical support to a department of ~20 writers for RoboHelp, FrameMaker, SVN, JIRA, Word, HTML.
 * Wrote basic VBA and Python scripts to automate tasks.
 * Done lots and lots of training and mentoring for junior writers.
@@ -23,6 +23,8 @@ As a technical writer, I have:
 * Helped with QA testing.
 
 In my previous life as a copy editor, I ensured that books translated from English to Romanian met the quality standards of the publishing house.
+
+My actual resume is available upon request.
 
 ## Tools
 ### Authoring tools & frameworks
