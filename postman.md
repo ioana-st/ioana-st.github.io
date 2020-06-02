@@ -8,4 +8,4 @@ classes: wide
 **Audience**: QA and BA who had not used Postman before.
 
 **Tool**: Confluence (exported into Word)
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vSD6kxXWrg4YVUZj96X7RiKduPHXwUA52gVxXD7AmEVisWOp2bL63EYukhzMsZkfQ/pub?embedded=true"></iframe>
+<iframe width="800" height="1000" src="https://docs.google.com/document/d/e/2PACX-1vSD6kxXWrg4YVUZj96X7RiKduPHXwUA52gVxXD7AmEVisWOp2bL63EYukhzMsZkfQ/pub?embedded=true"></iframe>
