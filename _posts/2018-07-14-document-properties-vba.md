@@ -11,7 +11,7 @@ After a rebranding, the names of the two products we documented changed, so we h
 
 This VBA macro processes all the files in a given folder and, for each of them, updates the product name (based on the old one) and then sets the title to `[Product Name] [Version] [Module]` (for example, `New Product Name 7.2 Cache Servers`).
 
-```
+```vba
 Sub BatchProcess()
   Dim strFolder As String, strFile As String, wdDoc As Document, product As String, version As String, title As String, newtitle As String
   strFolder = "D:\technical_guides\" 'replace the path with your own folder; the macro processes all the .docx files in this folder
@@ -42,4 +42,6 @@ End Sub
 
 If you want to simply update the product name for all the documents in a given folder, replace the entire `If` with:
 
+```vba
 wdDoc.CustomDocumentProperties("ProductName").Value = "Your New Product Name"
+```
