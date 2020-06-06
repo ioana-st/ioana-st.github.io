@@ -8,7 +8,7 @@
 
 <body>
     <div class="container-fluid">
-        <h1>What Are HTML and CSS?</h1>
+        <h1 class="pt-5">What Are HTML and CSS?</h1>
         <p>HTML (Hyper Text Markup Language) is a markup language for creating web pages. </p>
         <p>CSS (Cascading Style Sheets) is a style sheet language that describes how the HTML elements should look like.
         </p>
@@ -17,7 +17,7 @@
         <p>You can think of HTML like the plan of a house. This plan tells you that you have 7 rooms, a terrace etc, but
             it doesn’t tell you what color the walls are. CSS is the interior designer and painter - it says that the
             walls in the living room should be white and the walls in the hallway should be green.</p>
-        <h1>HTML Syntax</h1>
+        <h1 class="pt-5">HTML Syntax</h1>
         <p>An HTML document (page) must have a predefined basic structure, otherwise it won't be displayed correctly (or
             at all). </p>
         <ul>
@@ -67,7 +67,7 @@
         <p>The web page displays the contents of the <code>&lt;body&gt;</code> tag - this is where you put the
             documentation. You can see a visual representation <a
                 href="https://www.w3schools.com/html/html_intro.asp">in this page</a>.</p>
-        <h2>HTML Tags and Elements</h2>
+        <h2 class="pt-4">HTML Tags and Elements</h2>
         <p>HTML <strong>tags</strong> are element names surrounded by angle brackets:</p>
         <div class="card card-body"><code>
                 <strong>&lt;tagname&gt;</strong>blah blah<strong>&lt;/tagname&gt;</strong>
@@ -99,7 +99,7 @@
                 for you. (When you use the Author mode, RoboHelp inserts the tags correctly in the first place; when you
                 use HTML mode, RoboHelp tries to correct them for you, if needed.)</div>
         </div>
-        <h2>HTML Attributes</h2>
+        <h2 class="pt-4">HTML Attributes</h2>
         <p>Attributes provide additional information about the element they are associated to - for example, the style
             of a paragraph. Attributes are always specified in the start tag and have the format
             <code>attribute_name="attribute_value"</code>. In a tag, this will look like: <code>&lt;tag
@@ -108,13 +108,13 @@
         <p>
             <div class="card card-body"><code>&lt;p style="color:red"&gt;This is a red paragraph&lt;/p&gt;</code></div>
         </p>
-        <h1>Commonly-Used HTML Tags</h1>
+        <h1 class="pt-5">Commonly-Used HTML Tags</h1>
         <p>This page describes the HTML tags that we generally use in RoboHelp. Only the most basic information is
             included - for anything else, see the <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML
                 tutorial</a>. You can test HTML yourself using the <a
                 href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">editor</a> on the W3Schools
             website.</p>
-        <h2>Paragraph and Line Break - &lt;p&gt; and &lt;br&gt;</h2>
+        <h2 class="pt-4">Paragraph and Line Break - &lt;p&gt; and &lt;br&gt;</h2>
         <p>The<code> &lt;p&gt;</code> tag defines a paragraph, which can contain as many sentences as you want.</p>
         <p>You can manually force part of a paragraph tag to start on the next line by using a line break tag
             (<code>&lt;br/&gt;</code>), but this is not recommended in our documentation. If you need a new paragraph,
@@ -182,7 +182,7 @@
                 <p>This is the second paragraph.</p>
             </div>
         </div>
-        <h2>Headings - &lt;h1&gt;, &lt;h2&gt; etc</h2>
+        <h2 class="pt-4">Headings - &lt;h1&gt;, &lt;h2&gt; etc</h2>
         <p>Six levels of headings can be used in HTML - from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. Heading
             1 is the most important and, by default (without any CSS) it is displayed in the largest font.</p>
         <a class="btn btn-danger" data-toggle="collapse" href="#heading" role="button" aria-expanded="false"
@@ -200,10 +200,10 @@
                 <p>
                     <strong>Output:</strong>
                 </p>
-                <h1>My Heading</h1>
+                <h1 class="pt-5">My Heading</h1>
             </div>
         </div>
-        <h2>Division (section) - &lt;div&gt;</h2>
+        <h2 class="pt-4">Division (section) - &lt;div&gt;</h2>
         <p>The <code>&lt;div&gt;</code> tag defines a section (or <em>div</em>ision) of a page. A section can contain
             one or more paragraph and headings. It can be useful when you want to use CSS to set the same formatting for
             all the elements inside.</p>
@@ -225,7 +225,7 @@
                 </p>
             </div>
         </div>
-        <h2>Span - &lt;span&gt;</h2>
+        <h2 class="pt-4">Span - &lt;span&gt;</h2>
         <p>The <code>&lt;span&gt;</code> tag is generally used to group a part of a paragraph so that formatting can be
             applied through CSS. A <code>&lt;span&gt;</code> by itself doesn't do anything.</p>
         <div class="card">
@@ -234,7 +234,7 @@
                 may end up with a lot of empty &lt;span&gt; tags. They won't break anything and won't be visible in the
                 output, but it's better to delete them to have cleaner, easier-to-follow code.</div>
         </div>
-        <h2>Lists - &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</h2>
+        <h2 class="pt-4">Lists - &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</h2>
         <p>There are two types of lists:</p>
         <ul>
             <li>Ordered list (aka "numbered") - <code>&lt;ol&gt;</code>
@@ -276,11 +276,6 @@
                     <li>This is the first step.</li>
                     <li>This is the second step.</li>
                 </ol>
-                <p>
-                    <strong>
-                        <br />
-                    </strong>
-                </p>
             </div>
         </div><br><br>
         <a class="btn btn-danger" data-toggle="collapse" href="#unorderedList" role="button" aria-expanded="false"
@@ -409,7 +404,7 @@
                 </p>
             </div>
         </div>
-        <h2>Image - &lt;img&gt;</h2>
+        <h2 class="pt-4">Image - &lt;img&gt;</h2>
         <p>The <code>&lt;img&gt;</code> tag is used to embed an image. You always need to use two attributes:
             <code>src</code> (the source of the image, its location) and <code>alt</code> (the description, displayed in
             case the image cannot be loaded).</p>
@@ -424,7 +419,7 @@
             <code>height</code> attributes to resize it. You should avoid this. (On the other hand, RoboHelp
             automatically inserts the height and weight attributes and sets them to the full size of the image. Don't be
             surprised if you see them.)</p>
-        <h2>Address (link) - &lt;a&gt;</h2>
+        <h2 class="pt-4">Address (link) - &lt;a&gt;</h2>
         <p>The <code>&lt;a&gt;</code> tag is used to add a hyperlink. You always need to use the href attribute to
             specify the actual address.</p>
         <a class="btn btn-danger" data-toggle="collapse" href="#link" role="button" aria-expanded="false"
@@ -447,7 +442,7 @@
                     =
                     "_blank"&gt;</code></div>
         </div>
-        <h2>Table - &lt;table&gt;, &lt;th&gt;, &lt;td&gt;, &lt;tr&gt;</h2>
+        <h2 class="pt-4">Table - &lt;table&gt;, &lt;th&gt;, &lt;td&gt;, &lt;tr&gt;</h2>
         <p>The <code>&lt;table&gt;</code> tag is used to define a table, but several more tags are needed to have an
             actual table with rows and columns:</p>
         <ul>
@@ -518,10 +513,10 @@
         <p>You can use the <code>colspan</code> and <code>rowspan</code> attributes for the <code>td</code> and
             <code>th</code> tags to create merged rows or columns (but it's easier to just do it from the RoboHelp
             Author view).</p>
-        <h1>CSS Syntax</h1>
+        <h1 class="pt-5">CSS Syntax</h1>
         <p>CSS (Cascading Style Sheets) is used to indicate what HTML elements should look like. You can define the CSS
             inside an HTML document or use an external CSS file.</p>
-        <h2>Syntax</h2>
+        <h2 class="pt-4">Syntax</h2>
         <p>To associate a CSS style to an HTML tag, you need to use a syntax based on a selector and a declaration. The
             selector is the first part - the tag or class you want to apply the style to. The declaration is the style
             itself.</p>
@@ -598,7 +593,7 @@
         </div>
         <p>For other types of selectors, see the <a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax and
                 Selectors</a> page on W3Schools.</p>
-        <h2>Internal Style Sheet</h2>
+        <h2 class="pt-4">Internal Style Sheet</h2>
         <p>To define an internal style sheet, you enter the CSS in the <code>&lt;head&gt;</code> of the page, inside the
             <code>&lt;style&gt;</code> tag.</p>
         <a class="btn btn-danger" data-toggle="collapse" href="#internalStylesheet" role="button" aria-expanded="false"
@@ -625,7 +620,7 @@
                 </p>
             </div>
         </div>
-        <h2>External Style Sheet</h2>
+        <h2 class="pt-4">External Style Sheet</h2>
         <p>To define an external style sheet, you enter the location of the CSS file in the <code>&lt;head&gt;</code> of
             the page, inside the <code>&lt;link&gt;</code> tag.</p>
         <a class="btn btn-danger" data-toggle="collapse" href="#externalStylesheet" role="button" aria-expanded="false"
