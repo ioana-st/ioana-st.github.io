@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>What Are HTML and CSS?</h1>
+        <p>HTML (Hyper Text Markup Language) is a markup language for creating web pages. </p>
+        <p>CSS (Cascading Style Sheets) is a style sheet language that describes how the HTML elements should look like.
+        </p>
+        <p>In the modern approach, HTML describes the structure of a page and CSS describes the look and feel of a page.
+            (You can specify the look and feel directly in HTML as well, but that is not recommended nowadays.)</p>
+        <p>You can think of HTML like the plan of a house. This plan tells you that you have 7 rooms, a terrace etc, but
+            it doesn’t tell you what color the walls are. CSS is the interior designer and painter - it says that the
+            walls in the living room should be white and the walls in the hallway should be green.</p>
+        <h1>HTML Syntax</h1>
+        <p>An HTML document (page) must have a predefined basic structure, otherwise it won't be displayed correctly (or
+            at all). </p>
+        <ul>
+            <li>It has to start with a <code>doctype</code> declaration - this helps the browser to display the web page
+                correctly.</li>
+            <li>It needs to continue with a <code>&lt;html&gt;</code> tag.</li>
+            <li>It needs to have a <code>&lt;body</code>&gt; tag after the <code>&lt;html&gt;</code> tag (but not
+                necessarily <em>immediately</em> after).</li>
+            <li>It must end with a closing <code>&lt;/body&gt;</code> tag and a closing <code>&lt;/html&gt;</code> tag,
+                in this order.</li>
+        </ul>
+        <a class="btn btn-danger" data-toggle="collapse" href="#basicHtml" role="button" aria-expanded="false"
+            aria-controls="basicHtml">
+            Example - basic HTML document
+        </a>
+        <div class="collapse" id="basicHtml">
+            <div class="card card-body">
+                <p>
+                    <strong>
+                        <code>&lt;!DOCTYPE html&gt;</code>
+                    </strong>
+                    <br />
+                    <strong>
+                        <code>&lt;html&gt;</code>
+                    </strong>
+                    <br />
+                    <strong>
+                        <code>&lt;body&gt;</code>
+                    </strong>
+                </p>
+                <p>
+                    <code>&lt;h1&gt;A heading&lt;/h1&gt;</code>
+                    <br />
+                    <code>&lt;p&gt;A paragraph.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <strong>
+                        <code>&lt;/body&gt;</code>
+                    </strong>
+                    <br />
+                    <strong>
+                        <code>&lt;/html&gt;</code>
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <p>The web page displays the contents of the <code>&lt;body&gt;</code> tag - this is where you put the
+            documentation. You can see a visual representation <a
+                href="https://www.w3schools.com/html/html_intro.asp">in this page</a>.</p>
+        <h2>HTML Tags and Elements</h2>
+        <p>HTML <strong>tags</strong> are element names surrounded by angle brackets:</p>
+        <div class="card card-body"><code>
+                <strong>&lt;tagname&gt;</strong>blah blah<strong>&lt;/tagname&gt;</strong>
+            </code>
+        </div>
+        <p>Most HTML tags come in pairs: a start (opening) tag and an end (closing) tag. Both use the same element name,
+            but the end tag has an extra forward slash. Some elements (for example, the line break -
+            <code>&lt;br&gt;</code>) only have a start tag, because do not contain anything. These are called empty
+            elements.</p>
+        <p>
+            <strong>Note</strong>: In RoboHelp, the line break tag is always closed (<code>&lt;br/&gt;</code>). RoboHelp
+            uses XHTML, which is basically a form of HTML with a stricter structure. For more information about XHTML,
+            see the <a href="https://www.w3schools.com/html/html_xhtml.asp">W3Schools page</a>.</p>
+        <p>An HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+        <p>
+            <div class="card card-body"><code>
+                    <strong>&lt;tagname&gt;blah blah&lt;/tagname&gt;</strong>
+                </code></div>
+        </p>
+        <p>The order of the elements inside the <code>&lt;body&gt;</code> tag is mostly up to you. You can nest elements
+            (aka include an element inside another). By default, all the elements in the page contents are nested inside
+            the <code>&lt;body&gt;</code> tag.</p>
+        <p>There are some limitations - some elements cannot be nested inside others (for example, a paragraph cannot
+            contain a heading) - but other than that, the sky is the limit.</p>
+        <div class="card">
+            <div class="alert alert-light" role="alert">
+                <strong>Note</strong>: Again, as RoboHelp is based on XHTML, the structure is more strict than pure
+                HTML. In practice, you probably won't have to worry about this, because RoboHelp does most of the work
+                for you. (When you use the Author mode, RoboHelp inserts the tags correctly in the first place; when you
+                use HTML mode, RoboHelp tries to correct them for you, if needed.)</div>
+        </div>
+        <h2>HTML Attributes</h2>
+        <p>Attributes provide additional information about the element they are associated to - for example, the style
+            of a paragraph. Attributes are always specified in the start tag and have the format
+            <code>attribute_name="attribute_value"</code>. In a tag, this will look like: <code>&lt;tag
+                attribute_name:"attribute_value"&gt;blah&lt;/tag&gt;</code>.</p>
+        <p>For example:</p>
+        <p>
+            <div class="card card-body"><code>&lt;p style="color:red"&gt;This is a red paragraph&lt;/p&gt;</code></div>
+        </p>
+        <h1>Commonly-Used HTML Tags</h1>
+        <p>This page describes the HTML tags that we generally use in RoboHelp. Only the most basic information is
+            included - for anything else, see the <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML
+                tutorial</a>. You can test HTML yourself using the <a
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default">editor</a> on the W3Schools
+            website.</p>
+        <h2>Paragraph and Line Break - &lt;p&gt; and &lt;br&gt;</h2>
+        <p>The<code> &lt;p&gt;</code> tag defines a paragraph, which can contain as many sentences as you want.</p>
+        <p>You can manually force part of a paragraph tag to start on the next line by using a line break tag
+            (<code>&lt;br/&gt;</code>), but this is not recommended in our documentation. If you need a new paragraph,
+            you should actually <strong>use</strong> a new paragraph.</p>
+        <p>To insert a new paragraph in a visual editor like Word, you press Enter. To insert a new line break in a
+            visual editor like Word, you press Shift+Enter. In general, the distance between two paragraphs is larger
+            than the distance between two lines in the same paragraph.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#simplePara" role="button" aria-expanded="false"
+            aria-controls="simplePara">
+            Example - simple paragraph
+        </a>
+        <div class="collapse" id="simplePara">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <p>This is a paragraph.</p>
+            </div>
+        </div></br></br>
+        <a class="btn btn-danger" data-toggle="collapse" href="#breakPara" role="button" aria-expanded="false"
+            aria-controls="breakePara">
+            Example - paragraph with line break
+        </a>
+        <div class="collapse" id="breakPara">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This is the first sentence of a paragraph. &lt;br/&gt; Because I added a line break
+                        manually, the second sentence will appear on the next row.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <p>This is the first sentence of a paragraph.<br />Because I added a line break manually, the second
+                    sentence will appear on the next row.</p>
+            </div>
+        </div></br></br>
+        <a class="btn btn-danger" data-toggle="collapse" href="#twoPara" role="button" aria-expanded="false"
+            aria-controls="twoPara">
+            Example - two paragraphs
+        </a>
+        <div class="collapse" id="twoPara">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This is the first paragraph.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This is the second paragraph.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <p>This is the first paragraph.</p>
+                <p>This is the second paragraph.</p>
+            </div>
+        </div>
+        <h2>Headings - &lt;h1&gt;, &lt;h2&gt; etc</h2>
+        <p>Six levels of headings can be used in HTML - from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. Heading
+            1 is the most important and, by default (without any CSS) it is displayed in the largest font.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#heading" role="button" aria-expanded="false"
+            aria-controls="heading">
+            Example - heading
+        </a>
+        <div class="collapse" id="heading">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;h1&gt;My heading&lt;/h1&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <h1>My Heading</h1>
+            </div>
+        </div>
+        <h2>Division (section) - &lt;div&gt;</h2>
+        <p>The <code>&lt;div&gt;</code> tag defines a section (or <em>div</em>ision) of a page. A section can contain
+            one or more paragraph and headings. It can be useful when you want to use CSS to set the same formatting for
+            all the elements inside.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#div" role="button" aria-expanded="false"
+            aria-controls="div">
+            Example - div
+        </a>
+        <div class="collapse" id="div">
+            <div class="card card-body">
+                <p>
+                    <code>&lt;div&gt;</code></p>
+                <code>&lt;h1&gt;The heading of this section&lt;/h1&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This section contains one paragraph.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/div&gt;</code>
+                </p>
+            </div>
+        </div>
+        <h2>Span - &lt;span&gt;</h2>
+        <p>The <code>&lt;span&gt;</code> tag is generally used to group a part of a paragraph so that formatting can be
+            applied through CSS. A <code>&lt;span&gt;</code> by itself doesn't do anything.</p>
+        <div class="card">
+            <div class="alert alert-light" role="alert">
+                <strong>Note</strong>: In RoboHelp, if you are fixing formatting by running search &amp; replace, you
+                may end up with a lot of empty &lt;span&gt; tags. They won't break anything and won't be visible in the
+                output, but it's better to delete them to have cleaner, easier-to-follow code.</div>
+        </div>
+        <h2>Lists - &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</h2>
+        <p>There are two types of lists:</p>
+        <ul>
+            <li>Ordered list (aka "numbered") - <code>&lt;ol&gt;</code>
+            </li>
+            <li>Unordered list (aka "bulleted") - <code>&lt;ul&gt;</code>
+            </li>
+        </ul>
+        <p>Each step or item in a list is enclosed in <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tags.</p>
+        <p>The "ordered" and "unordered" terms are the "most" correct - an ordered list is a list where the items follow
+            a certain sequence, but it does not have to be numbered, it can also use <em>a, b, c</em> or i<em>, ii,
+                iii</em>. The same goes for the unordered lists - they can use bullets, circles, arrows etc.</p>
+        <p>By default, an ordered list is numbered starting with 1 and an unordered list has bullets. This default can
+            be changed through CSS.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#orderedList" role="button" aria-expanded="false"
+            aria-controls="orderedList">
+            Example - basic ordered list
+        </a>
+        <div class="collapse" id="orderedList">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;ol&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This is the first step.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This is the second step.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ol&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <ol>
+                    <li>This is the first step.</li>
+                    <li>This is the second step.</li>
+                </ol>
+                <p>
+                    <strong>
+                        <br />
+                    </strong>
+                </p>
+            </div>
+        </div><br><br>
+        <a class="btn btn-danger" data-toggle="collapse" href="#unorderedList" role="button" aria-expanded="false"
+            aria-controls="unorderedList">
+            Example - basic unordered list
+        </a>
+        <div class="collapse" id="unorderedList">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;ul&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This is an item.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This is another item. /&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ul&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <ul>
+                    <li>This is an item.</li>
+                    <li>This is another item.</li>
+                </ul>
+            </div>
+        </div>
+        <p>You can force an ordered list to start from a number different from 1, <strong>but you should never do
+                it</strong> in our documentation. </p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#forcedOrderedList" role="button" aria-expanded="false"
+            aria-controls="forcedOrderedList">
+            Example - ordered list with forced start
+        </a>
+        <div class="collapse" id="forcedOrderedList">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;ol start="50"&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This will be step number 50.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;This will be step number 51.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;Step number 52, but you should not do this.&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ol&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <p>50. This will be step number 50.</p>
+                <p>51. This will be step number 51.</p>
+                <p>52. Step number 52, but you should not do this.</p>
+            </div>
+        </div>
+        <p>As you can see, you do not need paragraph tags for an HTML list to be valid. <strong>However, in RoboHelp is
+                it best practice to add them.</strong> (The paragraph tag is represented in RoboHelp by the style
+            Normal.) If the CSS definition of the paragraph style is different from the definition of the list items,
+            then a list with Normal style will look different from a list without Normal style.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#listPara" role="button" aria-expanded="false"
+            aria-controls="listPara">
+            Example - ordered and unordered lists with added paragraphs
+        </a>
+        <div class="collapse" id="listPara">
+            <div class="card card-body">
+                <p>
+                    <code>&lt;ol&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is the first step.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is the second step.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ol&gt;</code>
+                </p>
+                <p> </p>
+                <p>
+                    <code>&lt;ul&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is an item.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is another item.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ul&gt;</code>
+                </p>
+            </div>
+        </div>
+        <p>An item (<code>&lt;li&gt;</code>) can contain one or more paragraphs. This is commonly used in RoboHelp to
+            ensure proper alignment for procedures.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#listMultiplePara" role="button" aria-expanded="false"
+            aria-controls="listMultiplePara">
+            Example - list item with several paragraphs
+        </a>
+        <div class="collapse" id="listMultiplePara">
+            <div class="card card-body">
+                <p>
+                    <code>&lt;ol&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is the first paragraph in the first step.&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;p&gt;This is the second paragraph in the first step.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;li&gt;&lt;p&gt;This is the second step.&lt;/p&gt;&lt;/li&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/ul&gt;</code>
+                </p>
+            </div>
+        </div>
+        <h2>Image - &lt;img&gt;</h2>
+        <p>The <code>&lt;img&gt;</code> tag is used to embed an image. You always need to use two attributes:
+            <code>src</code> (the source of the image, its location) and <code>alt</code> (the description, displayed in
+            case the image cannot be loaded).</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#img" role="button" aria-expanded="false"
+            aria-controls="img">
+            Example - img
+        </a>
+        <div class="collapse" id="img">
+            <div class="card card-body"><code>&lt;img src = "cat.png" alt="This is a cat image"/&gt;</code></div>
+        </div>
+        <p>By default, the image is displayed in full size. If you want, you can use the <code>width</code> and
+            <code>height</code> attributes to resize it. You should avoid this. (On the other hand, RoboHelp
+            automatically inserts the height and weight attributes and sets them to the full size of the image. Don't be
+            surprised if you see them.)</p>
+        <h2>Address (link) - &lt;a&gt;</h2>
+        <p>The <code>&lt;a&gt;</code> tag is used to add a hyperlink. You always need to use the href attribute to
+            specify the actual address.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#link" role="button" aria-expanded="false"
+            aria-controls="link">
+            Example - link
+        </a>
+        <div class="collapse" id="link">
+
+            <div class="card card-body"> <code>&lt;a href = "<a
+                        href="http://www.example.com/">www.example.com</a>"&gt;</code></div>
+        </div>
+        <p>You can specify how to open the linked page using the <code>target</code> attribute. For example, to open the
+            page in a new tab you would use <code>_blank</code>.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#linkNew" role="button" aria-expanded="false"
+            aria-controls="linkNew">
+            Example - link opened in new tab
+        </a>
+        <div class="collapse" id="linkNew">
+            <div class="card card-body"><code>&lt;a href= "<a href="http://www.example.com/">www.example.com</a>" target
+                    =
+                    "_blank"&gt;</code></div>
+        </div>
+        <h2>Table - &lt;table&gt;, &lt;th&gt;, &lt;td&gt;, &lt;tr&gt;</h2>
+        <p>The <code>&lt;table&gt;</code> tag is used to define a table, but several more tags are needed to have an
+            actual table with rows and columns:</p>
+        <ul>
+            <li>
+                <code>&lt;tr&gt;</code> - defines the regular table rows.</li>
+            <li>
+                <code>&lt;th&gt;</code> - defines the table header cells. <strong>Note</strong>: RoboHelp doesn't use
+                this when you insert a new table.</li>
+            <li>
+                <code>&lt;td&gt;</code> - defines the regular table cells.</li>
+        </ul>
+        <a class="btn btn-danger" data-toggle="collapse" href="#table" role="button" aria-expanded="false"
+            aria-controls="table">
+            Example - table
+        </a>
+        <div class="collapse" id="table">
+            <div class="card card-body">
+                <p>
+                    <strong>HTML:</strong>
+                </p>
+                <p>
+                    <code>&lt;table&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;th&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;td&gt;Header row, first column&lt;/td&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;td&gt;Header row, second column&lt;/td&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/th&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;tr&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;td&gt;Second row, first column&lt;/td&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;td&gt;Second row, second column&lt;/td&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;/tr&gt;</code>
+                </p>
+                <p>
+                    <code>&lt;table&gt;</code>
+                </p>
+                <p>
+                    <strong>Output:</strong>
+                </p>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Header row, first column</th>
+                            <th>Header row, second column</th>
+                        </tr>
+                        <tr>
+                            <td>Second row, first column</td>
+                            <td>Second row, second column</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p>You can use the <code>colspan</code> and <code>rowspan</code> attributes for the <code>td</code> and
+            <code>th</code> tags to create merged rows or columns (but it's easier to just do it from the RoboHelp
+            Author view).</p>
+        <h1>CSS Syntax</h1>
+        <p>CSS (Cascading Style Sheets) is used to indicate what HTML elements should look like. You can define the CSS
+            inside an HTML document or use an external CSS file.</p>
+        <h2>Syntax</h2>
+        <p>To associate a CSS style to an HTML tag, you need to use a syntax based on a selector and a declaration. The
+            selector is the first part - the tag or class you want to apply the style to. The declaration is the style
+            itself.</p>
+        <p>The basic syntax is:</p>
+        <div class="card card-body">
+            <p>
+                <code>tag {</code>
+            </p>
+            <p>
+                <code>property:value; </code>
+            </p>
+            <p>
+                <code>property:value;</code>
+            </p>
+            <p>
+                <code>}</code>
+            </p>
+        </div>
+        <p>Note that there is a semicolon after the last line as well.</p>
+        <p>With this syntax, all the text that is inside the specified tag will be styled as indicated. <span>In this
+                example, all paragraphs will be in 18pt Arial font.</span>
+        </p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#css" role="button" aria-expanded="false"
+            aria-controls="css">
+            Example - CSS styling
+        </a>
+        <div class="collapse" id="css">
+            <div class="card card-body">
+                <p><code>p {</code></p>
+                <p>
+                    <code>font-family: Arial;</code>
+                </p>
+                <p>
+                    <code>font-size: 18pt;</code>
+                </p>
+                <p>
+                    <code>}</code>
+                </p>
+            </div>
+        </div>
+        <p>You can also use a more complicated selector, for example to say that you want paragraphs that use the class
+            Body to have one style and paragraphs that use the class Note to have a different style.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#cssClasses" role="button" aria-expanded="false"
+            aria-controls="cssClasses">
+            Example - CSS classes
+        </a>
+        <div class="collapse" id="cssClasses">
+            <div class="card card-body">
+                <p>
+                    <code>p.Body {</code>
+                </p>
+                <p>
+                    <code>font-family: Arial;</code>
+                </p>
+                <p>
+                    <code>font-size: 18pt;</code>
+                </p>
+                <p>
+                    <code>}</code>
+                </p>
+                <p>
+                    <code>p.Note {</code>
+                </p>
+                <p>
+                    <code>font-family: Verdana;</code>
+                </p>
+                <p>
+                    <code>font-size: 18pt;</code>
+                </p>
+                <p>
+                    <code>}</code>
+                </p>
+            </div>
+        </div>
+        <p>For other types of selectors, see the <a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax and
+                Selectors</a> page on W3Schools.</p>
+        <h2>Internal Style Sheet</h2>
+        <p>To define an internal style sheet, you enter the CSS in the <code>&lt;head&gt;</code> of the page, inside the
+            <code>&lt;style&gt;</code> tag.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#internalStylesheet" role="button" aria-expanded="false"
+            aria-controls="internalStylesheet">
+            Example - internal stylesheet
+        </a>
+        <div class="collapse" id="internalStylesheet">
+            <div class="card card-body">
+                <p>
+                    <code>&lt;head&gt;</code>
+                    <br />
+                    <code>&lt;style&gt;</code>
+                    <br />
+                    <code>p {</code>
+                    <br />
+                    <code> font-size: 10pt;</code>
+                    <br />
+                    <code>}</code>
+                </p>
+                <p>
+                    <code>&lt;/style&gt;</code>
+                    <br />
+                    <code>&lt;/head&gt;</code>
+                </p>
+            </div>
+        </div>
+        <h2>External Style Sheet</h2>
+        <p>To define an external style sheet, you enter the location of the CSS file in the <code>&lt;head&gt;</code> of
+            the page, inside the <code>&lt;link&gt;</code> tag.</p>
+        <a class="btn btn-danger" data-toggle="collapse" href="#externalStylesheet" role="button" aria-expanded="false"
+            aria-controls="externalStylesheet">
+            Example - external stylesheet
+        </a>
+        <div class="collapse" id="externalStylesheet">
+            <div class="card card-body">
+                <p>
+                    <code>&lt;head&gt;</code>
+                    <br />
+                    <code>&lt;link rel="stylesheet" type="text/css" href="help_styles.css"&gt;</code>
+                    <br />
+                    <code>&lt;/head&gt;</code>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
