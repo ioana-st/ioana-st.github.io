@@ -1,24 +1,43 @@
-  <h1>What is RoboHelp?</h1>
-  <div>RoboHelp is a help authoring tool used to generate output in various formats from one source (this is called single sourcing).</div>
-  <div class="O1">
-    <img alt="(lightbulb)" border="0" class="emoticon emoticon-light-on" src="https://almtools/confluence/s/en_GB/7901/af536c7c6dffcc1d697b914b797aa7f2f306b4f8/_/images/icons/emoticons/lightbulb_on.svg" title="(lightbulb)"/> <span style="line-height: 1.4285715;">In this company we generate <strong>WebHelp</strong>, <strong>Responsive Help</strong> and <strong>Word</strong> (transformed to <strong>PDF</strong> for final delivery).</span>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1 class="pt-5">What is RoboHelp?</h1>
+    <p>RoboHelp is a help authoring tool used to generate output in various formats from one source (this is called
+      single sourcing).</p>
+    <p>In this company we generate
+      <strong>WebHelp</strong>,
+      <strong>Responsive Help</strong>
+      and
+      <strong>Word</strong>
+      (transformed to
+      <strong>PDF</strong>
+      for final delivery). This tutorial will refer primarily to WebHelp, as
+      that
+      is the main deliverable.</p>
+    <h1 class="pt-5">Getting Started</h1>
+    <p>To start working with RoboHelp, you need to either open an existing project or create a new one.</p>
+    <div class="alert alert-dark" role="alert">
+      In this company, we work mostly with existing projects.
+    </div>
   </div>
-  <div class="O1">
-    <span style="line-height: 1.4285715;">This tutorial will refer primarily to WebHelp, as that is the main deliverable.</span>
-  </div>
-  <h1 class="O1">Getting Started</h1>
-  <p>To start working with RoboHelp, you need to either open an existing project or create a new one.</p>
-  <p>
-    <img alt="(lightbulb)" border="0" class="emoticon emoticon-light-on" src="https://almtools/confluence/s/en_GB/7901/af536c7c6dffcc1d697b914b797aa7f2f306b4f8/_/images/icons/emoticons/lightbulb_on.svg" title="(lightbulb)"/> <span style="line-height: 1.4285715;background-color: transparent;">In this company, we work mostly with existing projects.</span>
+  <p>You can open or create a project from the
+    <strong>Starter</strong>
+    screen or from the
+    <strong>File</strong>
+    menu.
   </p>
-  <p>You can open or create a project from the <strong>Starter</strong> screen or from the <strong>File</strong> menu.</p>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow" ac:width="500">
-      <ri:attachment ri:filename="rh1.png"/>
-    </ac:image>
-  </p>
-  <h1>About RH Projects</h1>
-  <p>A basic RoboHelp project - defined as a project that can be used to generate a delivery-ready output - should at least contain the following:</p>
+  <img class="img-thumbnail" src="assets/images/open_project.png">
+  <h2 class="pt-4">About RH Projects</h2>
+  <p>A basic RoboHelp project - defined as a project that can be used to generate a delivery-ready output - should
+    at
+    least contain the following:</p>
   <ul>
     <li>Topics - the HTML files drafted by the technical writers.</li>
     <li>Table of contents - a structure for these topics</li>
@@ -26,595 +45,573 @@
   </ul>
   <p>A basic workflow for generating a deliverable (output) is:</p>
   <ol>
-    <li>Draft the topics. </li>
+    <li>Draft the topics.
+    </li>
     <li>Organize them into a table of contents.</li>
     <li>Define the output preferences in an SSL.</li>
     <li>Generate the output.</li>
   </ol>
   <p>This output can then be published (copied) to a website, an internal shared drive, etc.</p>
-  <h1>About the Interface</h1>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow" ac:width="500">
-      <ri:attachment ri:filename="image2015-9-10 11:59:46.png"/>
-    </ac:image>
+  <h2 class="pt-4">About the Interface</h2>
+  <img class="img-thumbnail" src="assets/images/interface.png">
+  <p>The image above explains the most commonly used components
   </p>
-  <p>The image above explains the most commonly used components </p>
   <p>Other features that are commonly used are:</p>
   <ul>
-    <li>Conditional build tags - "labels" that can be applied to text or images and allow you to selectively output content based on an expression</li>
-    <li>Variables - small fragments of text that can be defined once and reused throughout the project; variables can be part of a variable set.</li>
+    <li>Conditional build tags - "labels" that can be applied to text or images and allow you to selectively
+      output
+      content based on an expression</li>
+    <li>Variables - small fragments of text that can be defined once and reused throughout the project;
+      variables
+      can be part of a variable set.</li>
     <li>Snippets - larger fragments of text that can be defined once and reused throughout the project.</li>
   </ul>
-  <p> </p>
-  
-  
-  
-  <p>
-    <ac:structured-macro ac:macro-id="5fbbf4ae-cf8d-4e60-89ac-9726e4abdf14" ac:name="toc" ac:schema-version="1"/>
-  </p>
-  <h1>Creating a Topic</h1>
-  <p>Topics are HTML pages that make up the online help system - topics are essentially our documentation. You can create topics starting from the <strong>Project Manager</strong> pod or the <strong>TOC</strong> - the differences are described in the table below.</p>
-  <table class="wrapped">
-    <colgroup>
-      <col/>
-      <col/>
-      <col/>
-    </colgroup>
-    <tbody>
+  <h1 class="pt-5">Topics</h1>
+  <h2 class="pt-4">Creating a Topic</h2>
+  <p>Topics are HTML pages that make up the online help system - topics are essentially our documentation. You can
+    create topics starting from the
+    <strong>Project Manager</strong>
+    pod or the
+    <strong>TOC</strong>
+    - the
+    differences are described in the table below.</p>
+  <table class="table">
+    <thead class="thead-light">
       <tr>
         <th colspan="1">Action</th>
         <th colspan="1">Screenshot</th>
         <th colspan="1">Result</th>
       </tr>
-      <tr>
-        <td>
-          <div class="content-wrapper">
-            <p>Right-click a folder in the <strong>Project Manager </strong>and select <strong>New &gt; Topic</strong>.</p>
-            <ac:structured-macro ac:macro-id="3d3d393e-9b67-4bb2-a212-030b916eaad7" ac:name="info" ac:schema-version="1">
-              <ac:rich-text-body>This is the recommended way.</ac:rich-text-body>
-            </ac:structured-macro>
-            <p class="auto-cursor-target">
-              <br/>
-            </p>
-          </div>
-        </td>
-        <td>
-          <div class="content-wrapper">
-            <ac:image ac:queryparams="effects=drop-shadow">
-              <ri:attachment ri:filename="image2015-9-10 12:7:29.png"/>
-            </ac:image>
-          </div>
-        </td>
-        <td colspan="1">
-          <div class="content-wrapper">
-            <p>The topic is created in the folder you selected.</p>
-            <p>
-              <ac:image ac:queryparams="effects=drop-shadow">
-                <ri:attachment ri:filename="image2015-9-10 12:11:53.png"/>
-              </ac:image>
-            </p>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Right-click a book in the <strong>TOC</strong> and select <strong>New &gt; Topic</strong>.</td>
-        <td>
-          <div class="content-wrapper">
-            <ac:image ac:queryparams="effects=drop-shadow">
-              <ri:attachment ri:filename="image2015-9-10 12:12:48.png"/>
-            </ac:image>
-          </div>
-        </td>
-        <td colspan="1">
-          <div class="content-wrapper">
-            <p>The topic is created in the root folder.</p>
-            <p>
-              <ac:image ac:queryparams="effects=drop-shadow">
-                <ri:attachment ri:filename="image2015-9-10 12:14:11.png"/>
-              </ac:image>
-            </p>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <p>
-    <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">When you create a new topic, you need to fill in the details in the </span>
-    <strong style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">New Topic</strong>
-    <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;"> window. You generally only need to write the </span>
-    <strong style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">Topic Title</strong>
-    <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">. This name will be automatically added as a Heading 1 at the top of the topic, and it will also be displayed in the </span>
-    <strong style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">Project Manager</strong>
-    <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;background-color: transparent;">.</span>
-  </p>
-  <p>The <strong>File Name</strong> is the name under which the topic is saved to your HDD and it is created automatically from your topic title. These two names do not have to be identical, but it is good practice to use the same name in both fields.</p>
-  <ac:structured-macro ac:macro-id="7b6ba6c0-55ba-415d-8e28-596b14eb6998" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>Do not use any special characters <span>(&amp;, </span>
-        <span style="color: rgb(28,35,54);">–, <span>—, (, ) etc)</span>
-        </span> in the <strong>File Name</strong> field<span style="color: rgb(28,35,54);">
-          <span style="color: rgb(28,35,54);">. The <strong>Topic Title</strong> can use them, but make sure you replace them with <strong>_</strong> in the <strong>File Name</strong> if RoboHelp does not do it automatically.</span>
-        </span>
-      </p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <p> </p>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 12:17:50.png"/>
-    </ac:image>
-  </p>
-  <h1>Editing Topic Properties</h1>
-  <p>After you have created a topic, you can change its properties by right-clicking it in the <strong>Project Manager</strong>. This opens a window identical to the <strong>New Topic</strong> window.</p>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 12:43:16.png"/>
-    </ac:image>
-  </p>
-  <h1>Deleting a Topic</h1>
-  <p>To delete a topic, right-click it in the <strong>Project Manager</strong> and select <strong>Delete</strong>.</p>
-  <p>
-    <img alt="(warning)" border="0" class="emoticon emoticon-warning" src="https://almtools/confluence/s/en_GB/7901/af536c7c6dffcc1d697b914b797aa7f2f306b4f8/_/images/icons/emoticons/warning.svg" title="(warning)"/> Never delete a topic unless you are sure it is not referenced in other topics or the TOC!</p>
-  <p>To check topic links, right-click the topic (in the <strong>Project Manager</strong> or <strong>TOC</strong>) and select <strong>Show &gt; Topic Links</strong>. This displays the topics that link to the current topic and the topics that the current topics links to.</p>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 18:45:54.png"/>
-    </ac:image>
-  </p>
-  <p>To check topic references, right-click the topic (in the <strong>Project Manager</strong> or <strong>TOC</strong>) and select <strong>Show &gt; Topic References</strong>. This displays all the above links, plus the references in the TOC or Index.</p>
-  <h1>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-11 13:33:15.png"/>
-    </ac:image>
-  </h1>
-  <h1>Adding a Topic to the TOC</h1>
-  <p>To add a topic to the table of contents, simply drag it from the <strong>Project Manager</strong> into the <strong>TOC</strong> pod.</p>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 12:44:32.png"/>
-    </ac:image>
-  </p>
-  
-  
-  
-  <h1>
-    <ac:structured-macro ac:macro-id="c4d871e7-cef5-45de-9679-a7947ba4e352" ac:name="toc" ac:schema-version="1"/>
-  </h1>
-  <h1>Adding Content to a Topic</h1>
-  <p>You can edit topics in <strong>Design Mode</strong> or in <strong>HTML Mode</strong>.</p>
-  <table class="wrapped">
+    </thead>
     <tbody>
       <tr>
         <td>
-          <strong>Design Mode</strong> offers a WYSIWYG editor that uses common formatting shortcuts (CTRL + B, etc)</td>
-        <td>
-          <div class="content-wrapper">
-            <ac:image ac:queryparams="effects=drop-shadow">
-              <ri:attachment ri:filename="image2015-9-10 12:34:51.png">
-                <ri:page ri:content-title="Working with Topics"/>
-              </ri:attachment>
-            </ac:image>
+          <p>Right-click a folder in the
+            <strong>Project Manager
+            </strong>and select
+            <strong>New &gt;
+              Topic</strong>.</p>
+          <div class="card">
+            <div class="alert alert-light" role="alert">This is the recommended way.</div>
           </div>
+          <p class="auto-cursor-target">
+            <br />
+          </p>
+        </td>
+        <td>
+          <img class="img-thumbnail" src="assets/images/new_proj_manager.png">
+        </td>
+        <td>
+          <p>The topic is created in the folder you selected.</p>
+          <img class="img-thumbnail" src="assets/images/new_proj_manager_created.png">
         </td>
       </tr>
       <tr>
+        <td>Right-click a book in the
+          <strong>TOC</strong>
+          and select
+          <strong>New &gt; Topic</strong>.</td>
         <td>
-          <strong>HTML Mode</strong> lets you edit the source of the file directly.</td>
+          <img class="img-thumbnail" src="assets/images/new_toc.png">
+        </td>
         <td>
-          <div class="content-wrapper">
-            <ac:image ac:queryparams="effects=drop-shadow">
-              <ri:attachment ri:filename="image2015-9-10 12:37:24.png">
-                <ri:page ri:content-title="Working with Topics"/>
-              </ri:attachment>
-            </ac:image>
-          </div>
+          <p>The topic is created in the root folder.</p>
+          <p>
+            <img class="img-thumbnail" src="assets/images/new_toc_created.png">
+          </p>
         </td>
       </tr>
     </tbody>
   </table>
-  <p class="auto-cursor-target">
-    <br/>
+  <p></p>When you create a new topic, you need to fill in the details in the
+  <strong>New Topic</strong>
+  window.
+  You
+  generally only need to write the
+  <strong>Topic Title</strong>. This name will be automatically added as a
+  Heading 1
+  at the top of the topic, and it will also be displayed in the
+  <strong>Project Manager</strong>.
   </p>
-  <ac:structured-macro ac:macro-id="fdfbb259-4b8c-4d33-a789-77d5d6765a6e" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>Each topic has to be associated to a stylesheet that is defined at the project level. If your new topic does not pick up the correct stylesheet automatically, you can add it yourself from the <strong>Edit</strong> ribbon tab.</p>
-      <p>
-        <ac:image ac:queryparams="effects=drop-shadow">
-          <ri:attachment ri:filename="image2015-9-10 12:40:56.png">
-            <ri:page ri:content-title="Working with Topics"/>
-          </ri:attachment>
-        </ac:image>
-      </p>
-      <p>The name of the stylesheet may be different depending on the product you are writing for.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h1>Formatting Content</h1>
-  <p>Most formatting commands can be found on the <strong>Edit</strong> ribbon tab. </p>
-  <ac:structured-macro ac:macro-id="cb5da2c0-ae48-4966-b946-1cb3a7e127b6" ac:name="info" ac:schema-version="1">
-    <ac:parameter ac:name="title">Important</ac:parameter>
-    <ac:rich-text-body>
-      <p>
-        <strong>Never</strong> use inline formatting except for bold, italic, bullets and numbering. All other formatting needs to be applied using one of the styles that are predefined in the CSS.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 12:48:41.png">
-        <ri:page ri:content-title="Working with Topics"/>
-      </ri:attachment>
-    </ac:image>
+  <p>The
+    <strong>File Name</strong>
+    is the name under which the topic is saved to your HDD and it is created
+    automatically from your topic title. These two names do not have to be identical, but it is good practice to
+    use
+    the same name in both fields.</p>
+  <div class="alert alert-danger" role="alert">
+    Do not use any special characters (&amp;, –, —, (, ) etc) in the
+    <strong>File Name</strong>
+    field. The
+    <strong>Topic Title</strong>
+    can use them, but make sure you replace them with
+    <strong>_</strong>
+    in the
+    <strong>File Name</strong>
+    if RoboHelp does not do it automatically.
+  </div>
+  <img class="img-thumbnail" src="assets/images/new_topic.png">
+  <h2 class="pt-4">Editing Topic Properties</h2>
+  <p>After you have created a topic, you can change its properties by right-clicking it in the
+    <strong>Project
+      Manager</strong>. This opens a window identical to the
+    <strong>New Topic</strong>
+    window.</p>
+  <img class="img-thumbnail" src="assets/images/topic_properties.png">
+  <h2 class="pt-4">Deleting a Topic</h2>
+  <p>To delete a topic, right-click it in the
+    <strong>Project Manager</strong>
+    and select
+    <strong>Delete</strong>.
   </p>
-  <ac:structured-macro ac:macro-id="f12136f4-b9e4-4db2-b853-6acd0642388f" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>
-        <strong>Never</strong> paste content from Word or from other applications that include text formatting! If you need to paste text, pass it through Notepad or similar first. You can also download the free utility <a href="http://stevemiller.net/puretext/">PureText</a>.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h1>Dropdowns</h1>
+  <div class="alert alert-danger" role="alert">
+    Never delete a topic unless you are sure it is not referenced in
+    other
+    topics or the
+    TOC!</div>
+  <p>To check topic links, right-click the topic (in the
+    <strong>Project Manager</strong>
+    or
+    <strong>TOC</strong>)
+    and
+    select
+    <strong>Show &gt; Topic Links</strong>. This displays the topics that link to the current topic and
+    the
+    topics that the current topics links to.</p>
+  <img class="img-thumbnail" src="assets/images/topic_links.png">
+  <p>To check topic references, right-click the topic (in the
+    <strong>Project Manager</strong>
+    or
+    <strong>TOC</strong>) and select
+    <strong>Show &gt; Topic References</strong>. This displays all the above
+    links,
+    plus the references in the TOC or Index.</p>
+  <img class="img-thumbnail" src="assets/images/topic_references.png">
+  <h2 class="pt-4">Adding a Topic to the TOC</h2>
+  <p>To add a topic to the table of contents, simply drag it from the
+    <strong>Project Manager</strong>
+    into the
+    <strong>TOC</strong>
+    pod.</p>
+  <img class="img-thumbnail" src="assets/images/add_to_toc.png">
+  <h2 class="pt-4">Adding Content to a Topic</h2>
+  <p>You can edit topics in
+    <strong>Design Mode</strong>
+    or in
+    <strong>HTML Mode</strong>.</p>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th colspan="1">Mode</th>
+        <th colspan="1">Screenshot</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>Design Mode</strong>
+          offers a WYSIWYG editor that uses common formatting shortcuts (CTRL
+          +
+          B, etc)</td>
+        <td>
+          <img class="img-thumbnail" src="assets/images/design_mode.png">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>HTML Mode</strong>
+          lets you edit the source of the file directly.</td>
+        <td>
+          <img class="img-thumbnail" src="assets/images/html_mode.png">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Each topic has to be associated to a stylesheet that is defined at the project level. If your new topic
+    does not pick up the correct stylesheet automatically, you can add it yourself from the
+    <strong>Edit</strong>
+    ribbon tab.</p>
+  <img class="img-thumbnail" src="assets/images/add_stylesheet.png">
+  <h2 class="pt-4">Formatting Content</h2>
+  <p>Most formatting commands can be found on the
+    <strong>Edit</strong>
+    ribbon tab.
+  </p>
+  <div class="alert alert-danger" role="alert">
+    <strong>Never</strong>
+    use inline formatting except for bold, italic, bullets and numbering. All other
+    formatting needs to be applied using one of the styles that are predefined in the CSS.</p>
+    <img class="img-thumbnail" src="assets/images/predefined_styles.png"></br></br>
+    <strong>Never</strong>
+    paste content from Word or from other applications that include text formatting!
+    If you need to paste text, pass it through Notepad or similar first. You can also download the free
+    utility
+    <a href="http://stevemiller.net/puretext/">PureText</a>.
+  </div>
+  <h2 class="pt-4">Dropdowns</h2>
   <p>Dropdowns are RoboHelp-specific elements that allow you to "hide" content until you click the dropdown.</p>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-11 13:26:11.png">
-        <ri:page ri:content-title="Working with Topics"/>
-      </ri:attachment>
-    </ac:image>
-  </p>
+  <img class="img-thumbnail" src="assets/images/dropdown.png">
   <p>To insert a drop down, follow these steps:</p>
   <ol>
     <li>Write the text that you will apply the dropdown effect to.</li>
     <li>Select the text.</li>
-    <li>On the <strong>Insert</strong> tab, click <strong>DropDown text</strong>. The <strong>Dropdown text editor</strong> opens.</li>
+    <li>On the
+      <strong>Insert</strong>
+      tab, click
+      <strong>DropDown text</strong>. The
+      <strong>Dropdown text
+        editor</strong>
+      opens.</li>
     <li>Enter your text or image.</li>
     <li>Click outside the dropdown editor to close it and save the changes.</li>
   </ol>
-  <ac:structured-macro ac:macro-id="27a4e957-c931-4678-988b-fe2183a55084" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>RoboHelp also offers Expanding Text. The principle is the same, except that the image or text is displayed to the left of the "link", on the same line. We do not use these in our documentation.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <p class="auto-cursor-target">
-    <br/>
-  </p>
-  
-  
-  
-  <p>
-    <ac:structured-macro ac:macro-id="4fe2c2c5-b1b6-4845-9d04-6a8a485b5324" ac:name="toc" ac:schema-version="1"/>
-  </p>
-  <h1>About the Table of Contents</h1>
-  <p>The table of contents defines the structure of the content (the way it is displayed in the online help output). The TOC is structured into books and pages. Each page is essentially a link to a topic that exists in the project.</p>
+  <div class="alert alert-dark" role="alert">
+    RoboHelp also offers Expanding Text. The principle is the same, except that the image or text is
+    displayed to the left of the "link", on the same line. We do not use these in our documentation.
+  </div>
+  </div>
+  <h1 class="pt-5">Table of Contents</h1>
+  <p>The table of contents defines the structure of the content (the way it is displayed in the online help
+    output).
+    The TOC is structured into books and pages. Each page is essentially a link to a topic that exists in the
+    project.</p>
   <p>
     <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 15:41:28.png"/>
+      <ri:attachment ri:filename="image2015-9-10 15:41:28.png" />
     </ac:image>
   </p>
-  <h1>Topic Properties</h1>
-  <p>You can edit the properties of a topic (though you usually don't need to) by right-clicking it and selecting <strong>Properties</strong>.</p>
+  <h2 class="pt-4">Topic Properties</h2>
+  <p>You can edit the properties of a topic (though you usually don't need to) by right-clicking it and selecting
+    <strong>Properties</strong>.</p>
   <p>
     <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 15:34:13.png"/>
+      <ri:attachment ri:filename="image2015-9-10 15:34:13.png" />
     </ac:image>
   </p>
   <ul>
-    <li>The <strong>Page Title</strong> indicates the text that is displayed in the TOC of the generated online help.</li>
-    <li>The <strong>Page Destination</strong> section allows you to change the destination of the page (but you generally shouldn't do this).</li>
-    <li>The <strong>Link to</strong> field shows the location of the destination file on the disk.</li>
+    <li>The
+      <strong>Page Title</strong>
+      indicates the text that is displayed in the TOC of the generated online
+      help.</li>
+    <li>The
+      <strong>Page Destination</strong>
+      section allows you to change the destination of the page (but you
+      generally shouldn't do this).</li>
+    <li>The
+      <strong>Link to</strong>
+      field shows the location of the destination file on the disk.</li>
   </ul>
-  <h1>Book Properties</h1>
+  <h2 class="pt-4">Book Properties</h2>
   <p>The properties for a book are similar:</p>
   <p>
     <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="2015-10-15_14-22-06.png"/>
+      <ri:attachment ri:filename="2015-10-15_14-22-06.png" />
     </ac:image>
   </p>
-  <p> </p>
-  <p>The <strong>Book with Link</strong> setting indicates what happens when you click a book in the generated output:</p>
+  <p></p>
+  <p>The
+    <strong>Book with Link</strong>
+    setting indicates what happens when you click a book in the generated
+    output:
+  </p>
   <ul>
-    <li>If the book is not linked to a topic, clicking it simply expands the next level. This is the recommended setting.</li>
+    <li>If the book is not linked to a topic, clicking it simply expands the next level. This is the recommended
+      setting.</li>
     <li>If the book is linked to a topic, clicking it opens that topic and also expands the next level.</li>
   </ul>
-  
-  
-  <p>Single source layouts allow you to generate various types of output starting from a single source. In this company, we mostly use <strong>WebHelp</strong>, <strong>Printed Documentation</strong> and <strong>Responsive Help</strong>.</p>
-  <h1>Managing Layouts</h1>
-  <p>SSLs are managed in the <strong>Outputs (SSL)</strong> pod.</p>
-  <p>
-    <ac:image>
-      <ri:attachment ri:filename="image2015-9-11 9:37:34.png"/>
-    </ac:image>
-  </p>
-  <p>You can rename your outputs or keep the default names (but this is usually standardized at the product team level, so don't go changing things without asking first).</p>
-  <p>The buttons at the top of the pod let you perform various actions like creating a new layout or duplicating an existing one.</p>
-  <h1>Generating Outputs</h1>
+  <p>Single source layouts allow you to generate various types of output starting from a single source. In this
+    company, we mostly use
+    <strong>WebHelp</strong>,
+    <strong>Printed Documentation</strong>
+    and
+    <strong>Responsive
+      Help</strong>.</p>
+  <h1 class="pt-5">Layouts</h1>
+  <p>SSLs are managed in the
+    <strong>Outputs (SSL)</strong>
+    pod.</p>
+  <img class="img-thumbnail" src="assets/images/ssl.png">
+  <p>You can rename your outputs or keep the default names (but this is usually standardized at the product team
+    level, so don't go changing things without asking first).</p>
+  <p>The buttons at the top of the pod let you perform various actions like creating a new layout or duplicating
+    an
+    existing one.</p>
+  <h2 class="pt-4">Generating Output</h2>
   <p>To generate an output, simply double-click the respective layout and follow the steps of the wizard.</p>
-  <ac:structured-macro ac:macro-id="89079419-c164-46d0-8bcc-490b89fce74a" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>The settings are usually standardized at the product team level and should be already saved in the SSL. The following sections nevertheless explain what most of the options mean.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h1>About Conditional Build Tags</h1>
-  <p>Conditional build tags (CBT) are RoboHelp-specific code snippets that allow you to customize one set of source files for multiple audiences or purposes. For example, if you are writing a new topic, but you haven't finished yet, you can use a conditional build tag to make sure that the incomplete content is not published by mistake.</p>
+  <div class="alert alert-dark" role="alert">
+    The settings are usually standardized at the product team level and should be already saved in the SSL.
+  </div>
+  </div>
+  <h1 class="pt-5">Conditional Build Tags</h1>
+  <p>Conditional build tags (CBT) are RoboHelp-specific code snippets that allow you to customize one set of
+    source
+    files for multiple audiences or purposes. For example, if you are writing a new topic, but you haven't
+    finished
+    yet, you can use a conditional build tag to make sure that the incomplete content is not published by
+    mistake.
+  </p>
   <p>
-    <span style="color: rgb(51,51,51);">You can apply CBT to:</span>
+    You can apply CBT to:
   </p>
   <ul>
     <li>Text</li>
-    <li>Topics in the <strong>Project Manager</strong>
+    <li>Topics in the
+      <strong>Project Manager</strong>
     </li>
     <li>Pages in the TOC</li>
   </ul>
-  <ac:structured-macro ac:macro-id="ef9c1ffa-d195-489c-9eb1-973bc3bfef35" ac:name="info" ac:schema-version="1">
-    <ac:parameter ac:name="title">Important</ac:parameter>
-    <ac:rich-text-body>
-      <p>If you want to hide a topic from the output, you need to apply the conditional build tag in the <strong>Project Manager</strong>. When you do this, the topic is also hidden from the TOC when the module is generated (but it's still a good idea to also apply the tag to the corresponding TOC page, to make it obvious that the topic is hidden).</p>
-      <p>If you apply a tag to the TOC page <em>only</em>, the topic is still generated and can be found via search (and we don't want that).</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <p>
-    <span>You can </span>
+  <div class="alert alert-danger" role="alert">
+    <span>If you want to hide a topic from the output, you need to apply the conditional build tag in the
+      <strong>Project Manager</strong>. When you do this, the topic is also hidden from the TOC when the
+      module is generated (but it's still a good idea to also apply the tag to the corresponding TOC page,
+      to
+      make it obvious that the topic is hidden).</span></br></br>
+    <span>If you apply a tag to the TOC page
+      <em>only</em>, the topic is still generated and can be found via
+      search (and we don't want that).</span>
+  </div>
+  <div class="alert alert-danger" role="alert">
+    You can
     <strong>not</strong>
-    <span> apply CBT to baggage files.</span>
-  </p>
-  <h1>Working with Conditional Build Tags</h1>
-  <h2>Applying Conditional Build Tags</h2>
-  <p>To apply a tag to an element, simply select it, right-click, select <strong>Apply Conditional Build Tag</strong>, then choose an existing tag or create a new one.</p>
-  <p>You can also drag the tags from the <strong>Conditional Build Tags</strong> pod to the selected text or to a topic/page.</p>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 17:43:57.png"/>
-    </ac:image>
-  </p>
-  <h2>Previewing Conditionalized Text</h2>
-  <p>If you want to see what your output would look like if you excluded a specific conditional build tag, you can preview the topic by clicking <strong>View Item</strong> on the <strong>Project</strong> ribbon tab and then changing the <strong>Conditional Build Tag Expression</strong>.</p>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 18:15:18.png"/>
-    </ac:image>
-  </p>
-  <h2>Conditional Expressions</h2>
-  <p>When generating an output for a RoboHelp project, conditional build tags are grouped into expressions to indicate what parts of the content should be published.</p>
-  <p>For more information, see <ac:link>
-      <ri:page ri:content-title="Single Source Layouts"/>
-    </ac:link>.</p>
-  <h2>Removing Conditional Build Tags</h2>
-  <p>To remove a conditional build tag from an element, select the element, right-click it, select <strong>Apply Conditional Build Tag</strong>, then click the applied conditional build tag to remove it.</p>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 17:57:56.png"/>
-    </ac:image>
-  </p>
-  <ac:structured-macro ac:macro-id="f78996c4-ea02-4f42-931f-351eb67e75d0" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>If you are trying to remove a conditional build tag from a text fragment, make sure you select the tagged text and nothing else. If you select any extra characters, you will not be able to remove the tag.</p>
-      <p>For example, consider the following tagged text:</p>
-      <p>
-        <ac:image>
-          <ri:attachment ri:filename="image2015-9-10 18:1:2.png"/>
-        </ac:image>
-      </p>
-      <p>Note that the tag is applied to the words "or hides".</p>
-      <p>If I select more (for example "or hides the" or even "or hides "), the tag can not be removed.</p>
-      <p>
-        <ac:image>
-          <ri:attachment ri:filename="image2015-9-10 18:2:55.png"/>
-        </ac:image>
-      </p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h1>Managing Conditional Build Tags</h1>
-  <p>CBT are managed in the <strong>Conditional Build Tags</strong> pod.</p>
-  <p>
-    <ac:image ac:queryparams="effects=drop-shadow">
-      <ri:attachment ri:filename="image2015-9-10 17:38:39.png"/>
-    </ac:image>
-  </p>
-  <p>In this pod, you can create and delete tags, and view tag properties. All these options are available in the context menu.</p>
-  <ac:structured-macro ac:macro-id="08d49fcc-c953-4f72-b22e-8cdc6fe850f7" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>If you delete a conditional build tag, it is removed from all the places it had been applied, therefore you must be careful - <strong>never</strong> delete a tag before checking if it is in use! To do this, right-click the tag and select <strong>Properties</strong>.</p>
-      <p>
-        <ac:image>
-          <ri:attachment ri:filename="2015-10-15_14-24-33.png"/>
-        </ac:image>
-      </p>
-      <p> </p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h1>Example - Printed Documentation</h1>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 17:32:42.png"/>
-    </ac:image>
-  </p>
-  <p>In this topic, we have tagged the links in the topic with the <strong>Online</strong> CBT. This way, we can leave the links visible in the WebHelp output, but we can hide them from the PDF output.</p>
-  <h1>Example - Work in Progress</h1>
-  <p>
-    <ac:image ac:queryparams="effects=border-simple,shadow-kn">
-      <ri:attachment ri:filename="image2015-9-10 17:35:25.png"/>
-    </ac:image>
-  </p>
-  <p>In this table, we have tagged content that has been written for a future release. This way, we can generate an output today and the clients will not see documentation for features that they don't have yet.</p>
-  
-  <h1>About Variables</h1>
-  <p>In RoboHelp, variables are small bits of text that are defined once and can be reused throughout the module. You can define simple variables or variable sets. Variable sets are collections of variables that have a different value for each variable set.</p>
-  <p>Variable example: product name. If you inserted the product name as a variable and the product name changes (e.g. Roland becomes KaTet), you only need to update the variable and the product name is changed everywhere.</p>
-  <p>Variable set example: product versions. Our two Sophis applications have different versioning, but the help is generated from the same source. We use two variable sets: one for the first application (versioning: 4.3.2, 4.3.3, 5.1.2) and one for second one (6.3.2, 6.3.3, 7.1.2). By choosing the appropriate variable set in the SSL, the versions in the outputs are different between the two.</p>
-  <h1>Defining Variables</h1>
-  <p>Variables and variable sets are defined in the <strong>User Defined Variables</strong> pod.</p>
-  <h2>Creating a Variable</h2>
-  <ol>
-    <li>In the <strong>User Defined Variables</strong> pod, click <strong>Create a New User Defined Variable</strong>. The <strong>New Variable</strong> window is displayed.</li>
-    <li>Enter a <strong>Variable Name</strong>. This is used for identification purposes and is not displayed in the output, for example, Product_Name.</li>
-    <li>Enter a <strong>Variable Value</strong>. This is the text that is displayed in the output, for example, KaTet.</li>
-    <li>Click <strong>OK</strong>. The new variable is displayed in the pod.</li>
-  </ol>
-  <h2>Creating a Variable Set</h2>
-  <ol>
-    <li>In the <strong>User Defined Variables</strong> pod, click <strong>Add/Edit/Delete Variable Set</strong>. The <strong>Variable Set </strong>window is displayed.</li>
-    <li>Click <strong>Add</strong>. A new row is added.</li>
-    <li>Enter a name for the set and click <strong>OK</strong>. You cannot edit or delete the <strong>Default Variable Set</strong>.</li>
-  </ol>
-  <h2>Defining Variable Values in Sets</h2>
-  <ol>
-    <li>Define a variable in the usual way.</li>
-    <li>Double-click the variable. The <strong>User Defined Variable Properties</strong> window is displayed. The variable value you entered is assigned by default to all variable sets.</li>
-    <li>Under <strong>Variable Set</strong>, choose a set and change the value of the variable accordingly. Repeat until the variable is defined correctly for all sets.</li>
-    <li>Click <strong>OK</strong>.</li>
-  </ol>
-  <h1>Inserting Variables</h1>
-  <p>Variables can be used in topic content, topic titles, and the TOC.</p>
-  <h2>
-    <span style="line-height: 1.42857;">Variables in Topic Content</span>
-  </h2>
-  <p>
-    <span style="line-height: 1.42857;">To insert a variable in a topic, drag the variable from the </span>
-    <strong style="line-height: 1.42857;">User Defined Variables</strong>
-    <span style="line-height: 1.42857;"> pod to the desired place in the topic. </span>
-  </p>
-  <ac:structured-macro ac:macro-id="5c745d53-1b1e-4f7c-8c9c-4253aaaf1f01" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <span style="line-height: 1.42857;">If you are using variable sets, the values for the </span>
-      <strong style="line-height: 1.42857;">Default Variable Set</strong>
-      <span style="line-height: 1.42857;"> are displayed in the topics.</span>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <h2>
-    <span style="line-height: 1.42857;">Variables in Titles</span>
-  </h2>
-  <h2>
-    <span style="line-height: 1.42857;"> </span>
-    <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">To insert a variable in a topic title or TOC entry:</span>
-  </h2>
-  <ol>
-    <li>
-      <h2>
-        <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;"> Right-click the topic, TOC book or TOC page and select </span>
-        <strong style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">Properties</strong>
-        <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">. The </span>
-        <strong style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">Properties</strong>
-        <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;"> window for the respective type of element is displayed. </span>
-      </h2>
-    </li>
-    <li>
-      <h2>
-        <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">Position the cursor at the point where you want to add the variable. </span>
-      </h2>
-    </li>
-    <li>
-      <h2>
-        <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">In the <strong>Variables</strong> drop-down, select the required variable.</span>
-      </h2>
-    </li>
-    <li>
-      <span style="color: rgb(51,51,51);font-size: 14.0px;line-height: 1.42857;">Click <strong>Insert</strong>. The variable is added.</span>
-    </li>
-  </ol>
-  <h1>Generating Output with Variables</h1>
-  <p>If you are not using variable sets, you do not need to do anything extra in the SSL.</p>
-  <p>If you are using variable sets, make sure you select the correct one in the SSL.</p>
-  <p>For more information, see <ac:link>
-      <ri:page ri:content-title="Single Source Layouts"/>
-    </ac:link>.</p>
-  <h1>Deleting Variables</h1>
-  <p>To delete a variable, select it in the <strong>User Defined Variables</strong> pod and click <strong>Delete</strong>. The following options are displayed:</p>
-  <ul>
-    <li>
-      <strong>Delete variable and its reference</strong> - completely removes the variable from the module. For example, if you had a variable called <em>KaTet</em> and a line that said<em> "&lt;KaTet&gt; is a Deschain product"</em>, choosing this option would leave <em>" is a Deschain product"</em>.</li>
-    <li>
-      <p>
-        <strong>Delete only the variable</strong> - deletes the variable from the pod, but leaves references to the variable in the HTML of the respective topics. In the above example, the text would become <em>ERROR: Variable (KaTet) is undefined is a Deschain product.</em>
-      </p>
-    </li>
-    <li>
-      <strong>Delete variable and replace with actual content</strong> - deletes the variable, but replaces it with the variable value (static text) in the topics.</li>
-  </ul>
-  <ac:structured-macro ac:macro-id="7c2e3ed0-93ce-4427-9b8d-59c24020a899" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>In general, you should delete variables unless you are sure that they are not used anywhere. To check if a variable is used or not, look at the <strong>Used in Topics</strong> section in its <strong>Properties</strong> window.</ac:rich-text-body>
-  </ac:structured-macro>
-  <p class="auto-cursor-target">
-    <br/>
-  </p>
-  
+    apply CBT to baggage files.
+  </div>
+  <h2 class="pt-4">Applying Conditional Build Tags</h2>
+  <p>To apply a tag to an element, simply select it, right-click, select
+    <strong>Apply Conditional Build
+      Tag</strong>,
+    then choose an existing tag or create a new one.</p>
+  <p>You can also drag the tags from the
+    <strong>Conditional Build Tags</strong>
+    pod to the selected text or to a
+    topic/page.</p>
+  <img class="img-thumbnail" src="assets/images/apply_cbt.png">
+  <h2 class="pt-4">Previewing Conditionalized Text</h2>
+  <p>If you want to see what your output would look like if you excluded a specific conditional build tag, you can
+    preview the topic by clicking
+    <strong>View Item</strong>
+    on the
+    <strong>Project</strong>
+    ribbon tab and then
+    changing the
+    <strong>Conditional Build Tag Expression</strong>.</p>
+  <img class="img-thumbnail" src="assets/images/view_cbt.png">
+  <h2 class="pt-4">Conditional Expressions</h2>
+  <p>When generating an output for a RoboHelp project, conditional build tags are grouped into expressions to
+    indicate
+    what parts of the content should be published.</p>
+  <h2 class="pt-4">Removing Conditional Build Tags</h2>
+  <p>To remove a conditional build tag from an element, select the element, right-click it, select
+    <strong>Apply
+      Conditional Build Tag</strong>, then click the applied conditional build tag to remove it.</p>
+  <img class="img-thumbnail" src="assets/images/remove_cbt.png">
+  <h2 class="pt-4">Managing Conditional Build Tags</h2>
+  <p>CBT are managed in the
+    <strong>Conditional Build Tags</strong>
+    pod.</p>
+  <img class="img-thumbnail" src="assets/images/cbt_pod.png">
+  <p>In this pod, you can create and delete tags, and view tag properties. All these options are available in the
+    context menu.</p>
+  <div class="alert alert-danger" role="alert">
+    If you delete a conditional build tag, it is removed from all the places it had been applied, therefore
+    you must be careful -
+    <strong>never</strong>
+    delete a tag before checking if it is in use! To do this,
+    right-click the tag and select
+    <strong>Properties</strong>.</br>
+    <img class="img-thumbnail" src="assets/images/cbt_properties.png">
+  </div>
+</body>
+
+</html>
+</ac:rich-text-body>
+</ac:structured-macro>
+<h2 class="pt-4">Example - Printed Documentation</h2><img class="img-thumbnail" src="assets/images/online_cbt.png">
+<p>In this topic, we have tagged the links in the topic with the <strong>Online</strong> CBT. This way, we can
+  leave
+  the links visible in the WebHelp output, but we can hide them from the PDF output.</p>
+<h1 class="pt-5">Variables</h1>
+<p>In RoboHelp, variables are small bits of text that are defined once and can be reused throughout the module.
+  You
+  can define simple variables or variable sets. Variable sets are collections of variables that have a
+  different
+  value for each variable set.</p>
+<p>Variable example: product name. If you inserted the product name as a variable and the product name changes,
+  you
+  only need to update the variable and the product name is changed everywhere.</p>
+<p>Variable set example: product versions. Our two applications have different versioning, but the help is
+  generated from the same source. We use two variable sets: one for the first application (versioning: 4.3.2,
+  4.3.3, 5.1.2) and one for second one (6.3.2, 6.3.3, 7.1.2). By choosing the appropriate variable set in the
+  SSL,
+  the versions in the outputs are different between the two.</p>
+<h2 class="pt-4">Defining Variables</h2>
+<p>Variables and variable sets are defined in the <strong>User Defined Variables</strong> pod.</p>
+<h2 class="pt-4">Creating a Variable</h2>
+<ol>
+  <li>In the
+    <strong>User Defined Variables</strong>
+    pod, click
+    <strong>Create a New User Defined
+      Variable</strong>. The
+    <strong>New Variable</strong>
+    window is displayed.</li>
+  <li>Enter a
+    <strong>Variable Name</strong>. This is used for identification purposes and is not displayed in
+    the
+    output, for example, Product_Name.</li>
+  <li>Enter a
+    <strong>Variable Value</strong>. This is the text that is displayed in the output, for example,
+    KaTet.</li>
+  <li>Click
+    <strong>OK</strong>. The new variable is displayed in the pod.</li>
+</ol>
+<h2 class="pt-4">Creating a Variable Set</h2>
+<ol>
+  <li>In the
+    <strong>User Defined Variables</strong>
+    pod, click
+    <strong>Add/Edit/Delete Variable Set</strong>.
+    The
+    <strong>Variable Set
+    </strong>window is displayed.</li>
+  <li>Click
+    <strong>Add</strong>. A new row is added.</li>
+  <li>Enter a name for the set and click
+    <strong>OK</strong>. You cannot edit or delete the
+    <strong>Default
+      Variable Set</strong>.</li>
+</ol>
+<h2 class="pt-4">Defining Variable Values in Sets</h2>
+<ol>
+  <li>Define a variable in the usual way.</li>
+  <li>Double-click the variable. The
+    <strong>User Defined Variable Properties</strong>
+    window is displayed.
+    The
+    variable value you entered is assigned by default to all variable sets.</li>
+  <li>Under
+    <strong>Variable Set</strong>, choose a set and change the value of the variable accordingly.
+    Repeat
+    until the variable is defined correctly for all sets.</li>
+  <li>Click
+    <strong>OK</strong>.</li>
+</ol>
+<h2 class="pt-4">Inserting Variables</h2>
+<p>Variables can be used in topic content, topic titles, and the TOC.</p>
+<h2 class="pt-4">Variables in Topic Content</span></h2>
+<p>To insert a variable in a topic, drag the variable from the <strong>User Defined
+    Variables</strong> pod to the desired place in the topic.</p>
+<div class="alert alert-dark" role="alert">If you are using variable sets, the values for the <strong>Default
+    Variable Set</strong> are displayed in the topics.</div>
+</div>
+<h2 class="pt-4">Variables in Titles</h2>
+<p>To insert a variable in a topic title
+  or TOC entry:</p>
+<ol>
+  <li>Right-click the topic, TOC
+    book or TOC page and select <strong>Properties</strong>. The <strong>Properties</strong> window for the
+    respective
+    type of element is displayed.</li>
+  <li>Position the cursor at the
+    point where you want to add the variable.</li>
+  <li>In the <strong>Variables</strong> drop-down, select the required variable.</li>
+  <li>Click <strong>Insert</strong>. The variable is added.</li>
+</ol>
+<h2 class="pt-4">Generating Output with Variables</h2>
+<p>If you are not using variable sets, you do not need to do anything extra in the SSL.</p>
+<p>If you are using variable sets, make sure you select the correct one in the SSL.</p>
+<h2 class="pt-4">Deleting Variables</h2>
+<p>To delete a variable, select it in the <strong>User Defined Variables</strong> pod and click <strong>Delete</strong>.
+  The following options are displayed:</p>
+<ul>
+  <li><strong>Delete variable and its reference</strong> - completely removes the variable from the module.
+    For
+    example, if you had a variable called<em>KaTet</em>and a line that said<em>
+      "&lt;KaTet&gt; is a
+      Deschain
+      product"</em>, choosing this option would leave<em>" is a Deschain product"</em>.</li>
+  <li><strong>Delete only the variable</strong> - deletes the variable from the pod, but leaves references to
+    the variable in the HTML of the respective topics. In the above example, the text would become<em>ERROR:
+      Variable (KaTet) is undefined is a Deschain product.</em></li>
+  <li><strong>Delete variable and replace with actual content</strong> - deletes the variable, but replaces it
+    with the variable value (static text) in the topics.</li>
+</ul>
+<div class="alert alert-danger" role="alert">In general, you not should delete variables unless you are sure that they
+  are not used anywhere.
+  To check if a variable is used or not, look at the <strong>Used in Topics</strong> section in its
+  <strong>Properties</strong> window.</div>
+<h1 class="pt-5">Single Projects</h2>
   <p>To create a new RoboHelp project:</p>
   <ol>
-    <li>Open RoboHelp 2015 and click <strong>Blank Project</strong>. The New Project Wizard window opens.<br/>
-      <ac:image>
-        <ri:attachment ri:filename="blank project_1 rh.png"/>
-      </ac:image>
-    </li>
-    <li>On the New Project Wizard window, enter the project title and file name. Write the title of the project in title caps (for example, <strong>Structured Products</strong>) and the file name in lowercase, with underscores (for example, <strong>structured_products</strong>). make sure the file name does not include unrecognized characters, like dashes.<br/>
-      <ac:image>
-        <ri:attachment ri:filename="new project wizard_1.png"/>
-      </ac:image>
-    </li>
-    <li>Enter the location where the new project will be created. You can create the new project directly into the <strong>Sources</strong> folder. If not sure about the new project, save it locally and copy it afterwards.</li>
-    <li>Click <strong>Finish</strong>. The new project is created with the <strong>First Topic</strong> page displayed by default.</li>
-    <li>Copy the CSS file (<strong>help_styles</strong> file) from one of the RH projects from the <strong>Sources</strong> library.</li>
-    <li>Open the folder with the newly created RH project and paste the CSS file.</li>
-    <li>In RoboHelp, focus on the <strong>First Topic</strong> page, click the <strong>Edit</strong> tab and select <strong>help_style.css</strong> in the first drop-down field.<br/>
-      <ac:image>
-        <ri:attachment ri:filename="css file.png"/>
-      </ac:image>
-    </li>
-    <li>Press <strong>CTRL+S</strong> to save all the changes. You can now delete the <strong>First Topic</strong> page and create the pages you need in the <strong>Project Manager</strong> pane.</li>
-    <li>When finished, if the RH project has been created directly in the <strong>Sources</strong> folder, commit your changes.</li>
+    <li>Open RoboHelp 2015 and click <strong>Blank Project</strong>.<br /><img class="img-thumbnail"
+        src="assets/images/blank_project.png"></li>
+    <li>On the <strong>New Project Wizard</strong> window, enter the title, file name and location of the
+      new
+      project to be created.</li>
+    <li>Click <strong>Finish</strong>.</li>
+    <li>Copy the CSS file from one of the existing RH projects.</li>
+    <li>Open the folder where you created the new RH project and paste the CSS file.</li>
+    <li>Press CTRL+S to save all the changes. You can now delete the <strong>First
+        Topic</strong> page and create the pages you need in the <strong>Project Manager</strong> pane.</li>
   </ol>
-  
-  <h1>About Merged Projects</h1>
-  <p>In this company, the most common use of the merged projects functionality is the so-called "master project" of the online help system. The main advantage is that, instead of having one large RoboHelp project for the entire help (which would be unwieldy and would probably crash RoboHelp), we can split the documentation by module and simply assemble the modules into one TOC using the master.</p>
-  <p>Merged projects are added and organized using the <strong>Table of Contents</strong> pod, just like any topic. You can use merged projects, books and topics together in the same TOC. You can also use merged projects inside other merged projects.</p>
-  <p>The screenshot below is an example of a master project that contains 4 topics and several merged projects.</p>
-  <p>
-    <ac:image ac:height="580" ac:queryparams="effects=border-simple,shadow-kn" ac:width="320">
-      <ri:attachment ri:filename="image2016-2-1 12:41:22.png"/>
-    </ac:image>
-  </p>
-  <h1>Creating Merged Projects</h1>
+  <h1 class="pt-5">Merged Projects</h1>
+  <p>In this company, the most common use of the merged projects functionality is the so-called "master
+    project"
+    of
+    the online help system. The main advantage is that, instead of having one large RoboHelp project for the
+    entire
+    help (which would be unwieldy and would probably crash RoboHelp), we can split the documentation by
+    module
+    and
+    simply assemble the modules into one TOC using the master.</p>
+  <p>Merged projects are added and organized using the <strong>Table of Contents</strong> pod, just like any
+    topic.
+    You can use merged projects, books and topics together in the same TOC. You can also use merged projects
+    inside
+    other merged projects.</p>
+  <p>The screenshot below is an example of a master project that contains 4 topics and several merged
+    projects.</p><img class="img-thumbnail" src="assets/images/master.png">
+  <h2 class="pt-4">Creating Merged Projects</h2>
   <p>To add a new merged project:</p>
   <ol>
-    <li>In the <strong>Table of Contents</strong> pod, click <strong>New Merged Project</strong>. The <strong>Merged Project</strong> window is displayed.</li>
+    <li>In the <strong>Table of Contents</strong> pod, click <strong>New Merged Project</strong>. The <strong>Merged
+        Project</strong> window is displayed.</li>
+    <li>On the <strong>FlashHelp/WebHelp/Multiscreen/Adobe AIR</strong> tab, type the name of the project
+      you
+      want to link (the name of the .xpj of that project). You can also browse for the location of the
+      .xpj,
+      but
+      it is not required.</li>
     <li>
-      <p>On the <strong>FlashHelp/WebHelp/Multiscreen/Adobe AIR</strong> tab, type the name of the project you want to link (the name of the .xpj of that project).</p>
-      <ac:structured-macro ac:macro-id="48a248eb-869e-4062-b6dc-ea8ddf41ccdd" ac:name="info" ac:schema-version="1">
-        <ac:rich-text-body>
-          <p>You can also browse for the location of the .xpj, but it is not required.</p>
-        </ac:rich-text-body>
-      </ac:structured-macro>
-      <p class="auto-cursor-target">
-        <br/>
-      </p>
-    </li>
-    <li>
-      <p>Click <strong>OK</strong>. The merged project is added in the TOC with a specific icon.</p>
+      <p>Click
+        <strong>OK</strong>. The merged project is added in the TOC with a specific icon.</p>
     </li>
   </ol>
-  <h1>Merged Projects Structure</h1>
-  <p>If you have a project defined with merged projects, the following structure is generated when you build WebHelp:</p>
+  <h2 class="pt-4">Merged Projects Structure</h2>
+  <p>If you have a project defined with merged projects, the following structure is generated when you build
+    WebHelp:</p>
   <ul>
     <li>all the usual files in the project</li>
     <li>a <strong>mergedProjects</strong> folder in the root of the project.</li>
-    <li>inside the <strong>mergedProjects</strong> folder, a sub-folder for each merged (child) project, with the name defined in the TOC</li>
+    <li>inside the <strong>mergedProjects</strong> folder, a sub-folder for each merged (child) project,
+      with
+      the
+      name defined in the TOC</li>
     <li>inside each sub-folder, two files:<ul>
         <li>MasterData_xml.js</li>
         <li>readme.txt</li>
       </ul>
-      <ac:structured-macro ac:macro-id="3736b207-a491-40d3-8f14-83ff10eee86c" ac:name="info" ac:schema-version="1">
-        <ac:rich-text-body>If you use the <strong>Show Merged TOC in Child Project</strong> option in the WebHelp SSL, you should not delete these files, as the <strong>Show</strong> link won't work correctly anymore. For details about this option, see <ac:link>
-            <ri:page ri:content-title="Single Source Layouts"/>
-          </ac:link>.</ac:rich-text-body>
-      </ac:structured-macro>
-      <p class="auto-cursor-target">
-        <br/>
-      </p>
+      <div class="alert alert-danger" role="alert">
+        If you use the
+        <strong>Show Merged TOC in Child Project</strong>
+        option in the
+        WebHelp SSL, you should not delete these files, as the
+        <strong>Show</strong>
+        link won't work
+        correctly anymore.</div>
     </li>
   </ul>
-  <p>This diagram shows the structure of a master with empty child projects.</p>
-  <p>
-    <ac:image>
-      <ri:attachment ri:filename="image2016-2-1 13:21:48.png"/>
-    </ac:image>
-  </p>
-  <p> </p>
-  
-  
-  
+  <p>This diagram shows the structure of a master with empty child projects.</p><img class="img-thumbnail"
+    src="assets/images/master_structure.png"></div>
+  </body>
+
+  </html>
