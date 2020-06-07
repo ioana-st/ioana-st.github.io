@@ -9,6 +9,6 @@ classes: wide
 
 **Tool**: HTML with Bootstrap 4
 
-**[Direct link](html_css_collapse.htm)**
+**[Direct link](html-css-tutorial.htm)**
 
-<iframe width="800" height="1000" src="html_css_collapse.htm"></iframe>
+<iframe width="800" height="1000" src="html-css-tutorial.htm"></iframe>
