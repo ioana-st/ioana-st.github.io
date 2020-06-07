@@ -17,6 +17,6 @@ First, check if all the CBT applied to the text/topics actually appear in the **
 * If all tags are displayed, check the conditional expression in the SSL.
   * If the expression is also correct, you either found a new bug, or you are doing something wrong :)
   * If the expression is not correct, fix it and regenerate the output.
-* If tags are missing, follow the steps in [Troubleshooting Missing Variables and Conditional Tags](2016-09-12-robohelp-troubleshooting-missing-variables-cbt)
+* If tags are missing, follow the steps in [Troubleshooting Missing Variables and Conditional Tags](robohelp-troubleshooting-missing-variables-cbt).
 
 Second (if you are having problems with entire topics), make sure that you applied the conditional tag _in the **Project Manager**_. If you only apply the tag in the TOC, the topic will still be generated and will show up in searches.
