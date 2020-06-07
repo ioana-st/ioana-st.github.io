@@ -9,7 +9,7 @@ classes: wide
 
 **Tool**: HTML with Bootstrap 4 (initially in Confluence). 
 
-<small>You can view the GitHub history of the page to see how I converted the tutorial from Confluence XHTML to plain HTML styled with Bootstrap.</small>
+<small>You can view the [GitHub history](https://github.com/ioana-st/ioana-st.github.io/compare/8f125ef..911adf4) of the page to see how I converted the tutorial from Confluence XHTML to plain HTML styled with Bootstrap.</small>
 
 **[Direct link](robohelp-basics.htm)**
 
