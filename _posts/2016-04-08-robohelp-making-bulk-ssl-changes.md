@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RoboHelp: Making Bulk SSL Changes"
+title: "RoboHelp: making bulk SSL changes"
 date: 2016-04-08 12:54:28 +0300
 classes: wide
 categories: robohelp

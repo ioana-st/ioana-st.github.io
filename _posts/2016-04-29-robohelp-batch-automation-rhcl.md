@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RoboHelp: Batch Automation (rhcl.exe)"
+title: "RoboHelp: batch automation (rhcl.exe)"
 date: 2016-04-29 12:54:28 +0300
 classes: wide
 categories: robohelp

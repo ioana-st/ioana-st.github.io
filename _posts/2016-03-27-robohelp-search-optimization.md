@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RoboHelp: Search Optimization"
+title: "RoboHelp: search optimization"
 date: 2016-03-27 12:54:28 +0300
 classes: wide
 categories: robohelp

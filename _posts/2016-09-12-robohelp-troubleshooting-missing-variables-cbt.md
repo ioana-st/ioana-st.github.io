@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RoboHelp: Troubleshooting Missing Variables and Conditional Tags"
+title: "RoboHelp: troubleshooting missing variables and conditional tags"
 date: 2016-09-11 13:01:48 +0300
 classes: wide
 categories: robohelp

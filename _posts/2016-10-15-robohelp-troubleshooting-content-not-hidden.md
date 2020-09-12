@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RoboHelp: Troubleshooting Content Not Being Hidden in the Output"
+title: "RoboHelp: troubleshooting content not being hidden in the output"
 date: 2016-10-15 12:01:48 +0300
 classes: wide
 categories: robohelp

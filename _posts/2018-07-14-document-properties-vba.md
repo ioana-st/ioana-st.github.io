@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "VBA: Batch Changing Document Properties"
+title: "VBA: batch changing document properties"
 date: 2018-07-14 16:00:28 +0300
 classes: wide
 categories: vba
