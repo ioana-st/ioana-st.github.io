@@ -32,6 +32,7 @@ My actual resume is available upon request.
 | Name              | Experience 
 | ------------------|-------------| 
 | RoboHelp          | *****       | 
+| Flare             | ****
 | FrameMaker        | **          | 
 | Confluence        | **          | 
 | Jekyll            | *           |
@@ -43,7 +44,7 @@ My actual resume is available upon request.
 
 | Name          | Experience
 | ------------- |-------------| 
-| SVN           | ***         | 
+| SVN           | **          | 
 | Git           | *           | 
 
 ### Programming

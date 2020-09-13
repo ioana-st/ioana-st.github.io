@@ -28,12 +28,17 @@ We had documentation for several software products, each with its particularitie
 ## The battle plan
 It was clear that Product 3 had the most complicated use case, and that its step 2 could easily be applied to the other products as well.
 
-I ended up creating three Python scripts, one for each step. They are available on GitHub, with comments. 
+I ended up creating three Python scripts, one for each step. They are available [on GitHub](https://github.com/ioana-st/python_work/tree/master/robohelp_to_flare_table_migration), with comments. 
 * The first one identifies each table through a series of conditions and applies the appropriate `class`.
 * The second one adds headers and bodies:
     * It selects all tables with the `class` that indicates that they need  header rows, wraps the first row  in `<thead>`, replaces the `<td>` with `<th>` in the header row, and wraps the rest of the rows in `<tbody>`.
     * It selects all tables with the `class` that indicates that they don't need header rows and wraps them in `<tbody>`.
-* The third one does the Flare-specific part: it creates the correct relative path to the Flare table CSS file (depending on the location of the topic in the hierarchy), then it inserts the correct Flare syntax into the `<table>` tag. Because Flare automatically applies all other classes to the rest of the table elements, this replacement is enough - Flare will simply do the rest when you build the HTML5 target. 
+* The third one does the Flare-specific part: it creates the correct relative path to the Flare table CSS file (depending on the location of the topic in the folder hierarchy), then it inserts the correct Flare syntax into the `<table>` tag. Because Flare automatically applies all other classes to the rest of the table elements (`<td>`, `<tr>`), this replacement is enough - Flare will simply do the rest when you build the HTML5 target. 
+
+## The results
+The scripts ended up saving us many hours of work and we now have a solid foundation for the future, with no more inline formatting. 
+
+They did fail to correctly identify some tables, but we decided it's an acceptable trade-off.
 
 ## The disclaimers
 I am not a software developer and I am very new to Python, so the scripts did the job, but they are far from elegant. I made them available on GitHub partly as inspiration for others struggling with the same problem, partly as the "technical" part of my technical writing portfolio.
