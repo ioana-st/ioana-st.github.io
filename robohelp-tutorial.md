@@ -13,4 +13,5 @@ classes: wide
 
 **[Direct link](robohelp-basics.htm)**
 
-<iframe width="800" height="1000" src="robohelp-basics.htm"></iframe>
+<div style="position: relative; overflow: hidden; width: 100%; height: 600px">
+<iframe width="90%" height="100%" src="robohelp-basics.htm"></iframe></div>

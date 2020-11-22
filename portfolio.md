@@ -3,11 +3,24 @@ title: Portfolio
 classes: wide
 ---
 
-Most of the documentation I've written is not public and is the respective companies' intellectual property, so I cannot share it, but here are some internal or non-work-related documents I _can_ share:
-* Internal documentation for using Postman to run a report using one of the company's API - [Making calls with Postman](postman)
-* Documentation for updating a Wordpress blog based on a theme with custom features - [Wordpress documentation for Ovation theme](wordpress-doc)
-* Presentation to the students at the Faculty of Foreign Languages and Literatures - [Technical writing 101](technical-writing-101)
-* Training - introduction to HTML & CSS - [HTML & CSS basics](html-css)
-* Training - RoboHelp tutorial - [RoboHelp basics](robohelp-tutorial)
+## Writing and editing
+### Technical writing
+* [Making calls with Postman](postman) - internal documentation for using Postman to run a report
+* [Maintaining a Wordpress site](wordpress-doc) - end-user documentation for maintaining & updating a Wordpress site
+* [HTML & CSS basics](html-css) - introduction to HTML & CSS for junior technical writers
+* [RoboHelp basics](robohelp-tutorial) - introduction to RoboHelp for junior technical writers
 
-This website is a Jekyll site installed and configured by me, hosted on GitHub Pages. You can view its source files on [GitHub](https://github.com/ioana-st/ioana-st.github.io).
+### Copy editing
+* [IQON project descriptions](interior-design-copyedit) - website content for an interior design company
+
+### Other
+* [Technical writing 101](technical-writing-101) - introduction to technical writing for students
+
+## Tools and tech
+### Tools
+* [RoboHelp](../categories/#robohelp) - blog articles about using Adobe RoboHelp
+* [Flare](../categories/#flare) - blog articles about using MadCap Flare
+
+### Tech
+* [Python](https://github.com/ioana-st/python_work) - Python scripts used to automate various technical writing tasks (on GitHub)
+* Jekyll - This website is a Jekyll site installed and configured by me, hosted on GitHub Pages. You can view its source files on [GitHub](https://github.com/ioana-st/ioana-st.github.io).

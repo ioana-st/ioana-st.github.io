@@ -3,7 +3,7 @@ layout: single
 title: "RoboHelp to Flare: Migrating tables using Python"
 date: 2020-09-12 17:41:28 +0300
 classes: wide
-categories: robohelp, flare
+categories: robohelp flare python
 ---
 When we began migrating our large documentation set from RoboHelp to Flare, it was clear from the start that the main problem would be the migration of the tables.
 

@@ -11,4 +11,5 @@ classes: wide
 
 **[Direct link](https://drive.google.com/file/d/1RBRWQXOqPW0q_f4a6uLFC8lXdj1gKhBQ/view?usp=sharing)**
 
-<iframe width="800" height="1000" src="https://docs.google.com/document/d/e/2PACX-1vSD6kxXWrg4YVUZj96X7RiKduPHXwUA52gVxXD7AmEVisWOp2bL63EYukhzMsZkfQ/pub?embedded=true"></iframe>
+<div style="position: relative; overflow: hidden; width: 100%; height: 600px">
+<iframe width="90%" height="100%" src="https://docs.google.com/document/d/e/2PACX-1vSD6kxXWrg4YVUZj96X7RiKduPHXwUA52gVxXD7AmEVisWOp2bL63EYukhzMsZkfQ/pub?embedded=true"></iframe></div>
